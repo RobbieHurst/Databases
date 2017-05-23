@@ -109,3 +109,97 @@ CREATE TABLE TREATMENT_TABLE (
 
 );
 
+--Customer Inserts
+INSERT ALL
+INTO CUSTOMER_TABLE VALUES ('10111', 'Pam', 'Willis', '041 123 4587', 'pw@ymail.com')
+INTO CUSTOMER_TABLE VALUES ('10112', 'Henry', 'Jones', '021 457 2587', 'hjon@isat.com')
+INTO CUSTOMER_TABLE VALUES ('10113', 'Alex', 'Smith', '011 125 5874', 'asm@conz.co.za')
+INTO CUSTOMER_TABLE VALUES ('10114', 'Wayne', 'Willard', '011 125 8548 ', 'ww@ymail.com')
+INTO CUSTOMER_TABLE VALUES ('10115', 'Sisanda', 'Bitterhout', '051 545 8987', 'sbitr@hmail.com')
+SELECT 1
+FROM DUAL;
+
+--Animal Inserts
+INSERT ALL
+INTO ANIMAL_TABLE VALUES ('A50', 'Horse', 'American Quarter', 'Tan')
+INTO ANIMAL_TABLE VALUES ('A51', 'Dog', 'Bichon Frise', 'White')
+INTO ANIMAL_TABLE VALUES ('A52', 'Bird', 'African Grey', 'Grey')
+INTO ANIMAL_TABLE VALUES ('A53', 'Horse', 'Friesian Horse', 'Black')
+INTO ANIMAL_TABLE VALUES ('A54', 'Cat', 'American Shorthair', 'Tan')
+INTO ANIMAL_TABLE VALUES ('A55', 'Horse', 'Appaloosa', 'Black')
+INTO ANIMAL_TABLE VALUES ('A56', 'Dog', 'Clumber Spaniel', 'White')
+INTO ANIMAL_TABLE VALUES ('A57', 'Bird', 'Conure', 'Green')
+INTO ANIMAL_TABLE VALUES ('A58', 'Bird', 'Macaw', 'Blue and Yellow')
+INTO ANIMAL_TABLE VALUES ('A59', 'Cat', 'Bombay', ' Black')
+SELECT 1
+FROM DUAL;
+
+--Speciality Inserts
+INSERT ALL
+INTO SPECIALITY_TABLE VALUES (1, 'Equus caballus')
+INTO SPECIALITY_TABLE VALUES (2, 'Canis lupus')
+INTO SPECIALITY_TABLE VALUES (3, 'Felis Catus')
+INTO SPECIALITY_TABLE VALUES (4, 'Aves')
+SELECT 1
+FROM DUAL;
+
+--Veterinarian Inserts
+INSERT ALL
+INTO VETERINARIAN_TABLE VALUES ('555', 'Sam', 'Anderson', '086 1248854', 'san@ymail.com', 1)
+INTO VETERINARIAN_TABLE VALUES ('556', 'Eric', 'Johnson', '072 5486587', 'ej@isat.com', 1)
+INTO VETERINARIAN_TABLE VALUES ('557', 'Jeffery', 'Tims', '083 1545854', 'jt@ymail.com', 3)
+INTO VETERINARIAN_TABLE VALUES ('558', 'Simon', 'Gumede', '081 5855983', 'sge@isat.com', 2)
+INTO VETERINARIAN_TABLE VALUES ('559', 'Maxi', 'Aneshia', '076 5858547', 'max@hmail.com', 4)
+SELECT 1
+FROM DUAL;
+
+--Staff Inserts
+INSERT ALL
+INTO STAFF_TABLE VALUES ('111', 'Jenny', 'Loots', 'Receptionist', '086 129 1198')
+INTO STAFF_TABLE VALUES ('112', 'Monique', 'Van Eyck', 'Assistant', '087 545 5851')
+SELECT 1
+FROM DUAL;
+
+--Disease Inserts
+INSERT ALL
+INTO DISEASE_TABLE VALUES ('dis_101', 'Cerebellar abiotrophy')
+INTO DISEASE_TABLE VALUES ('dis_102', 'Salmonellosis')
+INTO DISEASE_TABLE VALUES ('dis_103', 'Proventricular Dilatation')
+INTO DISEASE_TABLE VALUES ('dis_104', 'Candidiasis')
+INTO DISEASE_TABLE VALUES ('dis_105', 'Parvo')
+INTO DISEASE_TABLE VALUES ('dis_106', 'Periodontis')
+SELECT 1
+FROM DUAL;
+
+--Medicine Inserts
+INSERT ALL
+INTO MEDICINE_TABLE VALUES ('med_101', 'Anti-Inflammatory', 180.95, '25 March 2018')
+INTO MEDICINE_TABLE VALUES ('med_102', 'Electrolyte Replacement', 298.75, '13 April 2018')
+INTO MEDICINE_TABLE VALUES ('med_103', 'COX-2 Inhibitors', 307.09, '8 February 2018')
+INTO MEDICINE_TABLE VALUES ('med_104', 'Antifungal Tablets', 55.98, '19 March 2018')
+INTO MEDICINE_TABLE VALUES ('med_105', 'Colostrum', 567.09, '17 January 2018')
+INTO MEDICINE_TABLE VALUES ('med_106', 'Antiparasitic Tablets', 290.98, '23 October 2018')
+INTO MEDICINE_TABLE VALUES ('med_107', 'Compax oral hygiene tablets', 125.89, '25 June 2018')
+SELECT 1
+FROM DUAL;
+
+--Billing Inserts
+INSERT ALL
+INTO BILLING_TABLE VALUES ('bil_123', '10111', '111', 5)
+INTO BILLING_TABLE VALUES ('bil_124', '10115', '111', 3)
+INTO BILLING_TABLE VALUES ('bil_125', '10113', '112', 7)
+INTO BILLING_TABLE VALUES ('bil_126', '10111', '111', 8)
+INTO BILLING_TABLE VALUES ('bil_127', '10112', '112', 10)
+SELECT 1
+FROM DUAL;
+
+--Treatment Inserts
+INSERT ALL
+INTO TREATMENT_TABLE VALUES ('t_111', 'A50', 'dis_101', 'bil_124', '555', 'med_104')
+INTO TREATMENT_TABLE VALUES ('t_112', 'A55', 'dis_101', 'bil_127', '555', 'med_101')
+INTO TREATMENT_TABLE VALUES ('t_113', 'A51', 'dis_105', 'bil_123', '558', 'med_103')
+INTO TREATMENT_TABLE VALUES ('t_114', 'A57', 'dis_104', 'bil_126', '559', 'med_103')
+INTO TREATMENT_TABLE VALUES ('t_115', 'A51', 'dis_105', 'bil_125', '558', 'med_104')
+SELECT 1
+FROM DUAL;
+
